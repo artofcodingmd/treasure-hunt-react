@@ -26,5 +26,5 @@
     }
   },
 
-  "postCreateCommand": "npm ci && npm install react-bootstrap bootstrap"
+  "postCreateCommand": "npm ci"
 }
