@@ -421,8 +421,7 @@ FodyWeavers.xsd
 /build
 /dist
 
-# Package manager lock files
-package-lock.json
+# Package manager lock files (keep package-lock.json for npm ci)
 yarn.lock
 pnpm-lock.yaml
 
