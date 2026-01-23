@@ -339,9 +339,9 @@ paket-files/
 # CodeRush personal settings
 **/.cr/personal
 
-# Python Tools for Visual Studio (PTVS)
+# Python caches & compiled files
 **/__pycache__/
-*.pyc
+**/*.py[cod]
 
 # Cake - Uncomment if you are using it
 #tools/**
@@ -456,7 +456,5 @@ lerna-debug.log*
 .idea/
 .DS_Store
 
-# Python (for serving legacy files)
-__pycache__/
-*.py[cod]
-*$py.class
+# Python virtual environment
+server/.venv/
