@@ -456,3 +456,8 @@ lerna-debug.log*
 *.swp
 .idea/
 .DS_Store
+
+# Python (for serving legacy files)
+__pycache__/
+*.py[cod]
+*$py.class
