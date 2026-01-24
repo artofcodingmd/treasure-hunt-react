@@ -16,13 +16,13 @@
     }
   },
 
-  "forwardPorts": [3000, 5500],
+  "forwardPorts": [5173, 5500],
   "portsAttributes": {
-    "3000": {
-      "label": "React Game App"
+    "5173": {
+      "label": "React App (Vite)"
     },
     "5500": {
-      "label": "Original HTML Game"
+      "label": "Legacy Game Server (Python)"
     }
   },
 
