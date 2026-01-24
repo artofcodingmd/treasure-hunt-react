@@ -458,3 +458,16 @@ lerna-debug.log*
 
 # Python virtual environment
 server/.venv/
+
+# React / Node / Vite outputs & environment
+.cache/
+dist-ssr/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs & debug files
+*.local
+pnpm-debug.log*
+lerna-debug.log*
