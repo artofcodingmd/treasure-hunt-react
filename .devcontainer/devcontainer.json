@@ -16,15 +16,21 @@
     }
   },
 
-  "forwardPorts": [5173, 5500],
+  "forwardPorts": [5173, 5174, 5175, 5500],
   "portsAttributes": {
     "5173": {
-      "label": "React App (Vite)"
+      "label": "Legacy Shell"
+    },
+    "5174": {
+      "label": "React Migration (jQuery/Bootstrap)"
+    },
+    "5175": {
+      "label": "Modern React Conversion"
     },
     "5500": {
       "label": "Legacy Game Server (Python)"
     }
   },
 
-  "postCreateCommand": "npm ci && pip install -r server/requirements.txt"
+  "postCreateCommand": "npm ci && pip install -r server/requirements.txt" // Lockfile installation
 }
