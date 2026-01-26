@@ -458,6 +458,10 @@ lerna-debug.log*
 
 # Python virtual environment
 server/.venv/
+.venv/
+venv/
+ENV/
+env/
 
 # React / Node / Vite outputs & environment
 .cache/
