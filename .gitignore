@@ -162,9 +162,12 @@ coverage*.json
 coverage*.xml
 coverage*.info
 
-# Visual Studio code coverage results
+# Various code coverage results
 *.coverage
 *.coveragexml
+coverage/
+.coverage
+htmlcov/
 
 # NCrunch
 _NCrunch_*
@@ -342,6 +345,7 @@ paket-files/
 # Python caches & compiled files
 **/__pycache__/
 **/*.py[cod]
+.pytest_cache/
 
 # Cake - Uncomment if you are using it
 #tools/**
@@ -417,33 +421,31 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-# React build outputs
-/build
-/dist
 
 # Package manager lock files (keep package-lock.json for npm ci)
 yarn.lock
 pnpm-lock.yaml
 
-# React/Node specific
+# React/Node/Vite outputs & environment
 /.pnp
 .pnp.js
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-# Testing
-/coverage
-
-# Development cache
-.cache
+.cache/
+build/
+dist/
+dist-ssr/
+.vite/
+*.local
 
 # npm logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+pnpm-debug.log*
 
 # Optional npm cache directory
 .npm
@@ -463,16 +465,8 @@ venv/
 ENV/
 env/
 
-# React / Node / Vite outputs & environment
-.cache/
-dist-ssr/
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Devcontainer environment file
+.devcontainer/.env
 
-# Logs & debug files
-logs/
-*.local
-pnpm-debug.log*
-lerna-debug.log*
+# GitHub Pages build artifacts
+.gh-pages/
